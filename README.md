@@ -34,3 +34,47 @@ Validator lowerCaseValidator2 = new Validator((String s) -> s.matches("[a-z]+"))
 assert(lowerCaseValidator.validate("abc") == true);
 assert(lowerCaseValidator.validate("ABC") == false);
 ```
+
+## [Template Method](Template)
+
+Outline an algorithm's steps and customize each steps' implemetation details.
+
+```java
+public void process() {
+    start();
+    work();
+    finish();
+}
+
+Baker baker = new Baker();
+baker.process();
+/*
+ * Preheat oven
+ * Gather recipe books
+ * Prepare ingedients
+ * Chop ingredients
+ * Mix ingredients
+ * Place ingredients in a cooking container
+ * Place cooking contains in oven
+ * Set baking timer
+ * Remove from oven and let cooking container cool down
+ * Place food onto plates on the dinner table
+ * Ring dinner bell
+ */
+
+Engineer engineer = new Engineer();
+engineer.process();
+/*
+ * Analyze requirements
+ * Architect software design
+ * Create UML class + sequene diagrams
+ * Create boilerplate code
+ * Develop implementation
+ * Test to validate expected behavior
+ * Fix linting errors
+ * Create CL and assign reviews
+ * Request code review
+ * Address code review feedback
+ * Commit software changes
+ */
+```
