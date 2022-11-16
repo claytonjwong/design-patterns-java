@@ -1,0 +1,10 @@
+@startuml
+class Strategy {
+    +execute()
+}
+class IsNumeric
+class IsAllLowerCase
+class IsNumeric implements Strategy
+class IsAllLowerCase implements Strategy
+
+@enduml

@@ -2,7 +2,11 @@
 
 Blueprints for software design solutions.
 
+---
+
 ## [Strategy](Strategy)
+
+![](Strategy/Strategy.png)
 
 Represent a set of algorithms and choose one at runtime.
 
