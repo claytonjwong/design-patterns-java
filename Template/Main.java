@@ -24,7 +24,7 @@ public class Main {
         /*
          * Analyze requirements
          * Architect software design
-         * Create UML class + sequene diagrams
+         * Create UML class + sequence diagrams
          * Create boilerplate code
          * Develop implementation
          * Test to validate expected behavior

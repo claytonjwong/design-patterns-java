@@ -8,7 +8,7 @@ public class Engineer extends Processor {
         new ArrayList(Arrays.asList(
             "Analyze requirements",
             "Architect software design",
-            "Create UML class + sequene diagrams"))
+            "Create UML class + sequence diagrams"))
         .stream()
         .forEach(System.out::println);
     }
