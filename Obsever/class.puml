@@ -1,0 +1,14 @@
+@startuml
+class Subject {
+  +registerObserver(Observer)
+  +notifyObservers(String)
+}
+class NewsFeed implements Subject
+class Observer {
+  +notify(String)
+}
+Subject "1" o-- "many" Observer
+class NewYorkTimes implements Observer
+class WallStreetJournal implements Observer
+class WashingtonPost implements Observer
+@enduml

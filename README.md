@@ -81,6 +81,8 @@ engineer.process();
 
 ## [Observer](Observer)
 
+![](Obsever/class.png)
+
 The subject notifies observers.
 
 ```java
