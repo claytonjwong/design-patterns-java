@@ -23,7 +23,7 @@ public class Baker extends Processor {
     }
     public void finish() {
         new ArrayList(Arrays.asList(
-        "Place cooking contains in oven",
+        "Place cooking containers in oven",
             "Set baking timer",
             "Remove from oven and let cooking container cool down",
             "Place food onto plates on the dinner table",
