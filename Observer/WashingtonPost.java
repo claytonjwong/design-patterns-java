@@ -1,4 +1,4 @@
-package Obsever;
+package Observer;
 
 public class WashingtonPost implements Observer {
     private static final String KEY = "Jeff Bezos";

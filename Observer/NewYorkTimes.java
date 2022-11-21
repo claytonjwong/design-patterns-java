@@ -1,4 +1,4 @@
-package Obsever;
+package Observer;
 
 public class NewYorkTimes implements Observer {
     private static final String KEY = "Manhattan";
