@@ -19,5 +19,19 @@ public class Main {
          * New York Times: Free pizza in downtown Manhattan
          * The Washington Post: Jeff Bezos owns the Washington Post
          */
+
+        // lambda expressions
+        feed.registerObserver((String s) -> {
+            if (s.contains("sale"))
+                System.out.println("Sale! " + s);
+        });
+        feed.notifyObservers("Puppies for sale");
+        feed.notifyObservers("Garage sale this weekend");
+        feed.notifyObservers("All grassfeed beef is on sale");
+        /*
+         * Sale! Puppies for sale
+         * Sale! Garage sale this weekend
+         * Sale! All grassfeed beef is on sale
+         */
     }
 }
