@@ -1,0 +1,10 @@
+@startuml
+class ConcreteProcessingObject
+class ProcessingObject {
++handle()
+}
+class Client
+ConcreteProcessingObject o--> ProcessingObject
+ConcreteProcessingObject ..> ProcessingObject
+Client ..> ProcessingObject
+@enduml

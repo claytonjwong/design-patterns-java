@@ -115,3 +115,28 @@ feed.notifyObservers("All grassfeed beef is on sale");
  * Sale! All grassfeed beef is on sale
  */
 ```
+
+## [Chain of Responsibility](ChainOfResponsibility)
+
+![](ChainOfResponsibility/class.png)
+
+Create a chain of processing objects.
+
+```java
+ProcessingObject<String> titleCase = new TitleCase();
+ProcessingObject<String> exclamationMark = new ExclamationMark();
+titleCase.setSuccessor(exclamationMark);
+String input = "howdy there partner";
+String output = titleCase.handle(input);
+System.out.println(output);
+/*
+ * Howdy there partner!
+ */
+
+// lambdas
+UnaryOperator<String> titleCase = (String s) -> s.length() == 0 ? "" : s.substring(0, 1).toUpperCase() + s.substring(1);
+UnaryOperator<String> exclamationMark = (String s) -> s + "!";
+Function<String, String> pipeline = titleCase.andThen(exclamationMark);
+String output = pipeline.apply(input);
+System.out.println(output);
+```
